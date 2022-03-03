@@ -19,15 +19,29 @@
         background-attachment: fixed;
         background-size: 100% 100%;
     }
-    .gap{
+    .top{
+        /* border: 2px solid red; */
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 1;
+    }
+    .gap {
         /* background-color: rgb(211, 185, 185); */
-        height: 55px;
+        height: 60px;
         width: 1150px;
         margin: auto;
         display: flex;
         align-items: center;
+       
     }
-    .gap .lin{
+
+    .gap .log img {
+        display: inline-block;
+        width: 150px;
+    }
+
+    .gap .lin {
         margin-left: 15px;
         margin-right: 15px;
         height: 15px;
@@ -36,60 +50,75 @@
         position: relative;
         left: 360px;
         opacity: .7;
+        top: 4px;
     }
-    .gap .top1{
+
+    .gap .top1 {
         font-size: 14px;
         /* background-color: yellow; */
-        position:relative;
+        position: relative;
         color: rgba(83, 80, 80, 0.705);
         left: 360px;
+        top: 4px;
     }
-    .gap .top2{
+
+    .gap .top2 {
         /* background-color: green; */
         font-size: 14px;
         /* color: grey; */
-        position:relative;
+        position: relative;
         left: 360px;
         color: rgba(83, 80, 80, 0.705);
+        top: 4px;
     }
-    .gap .top3{
+
+    .gap .top3 {
         /* background-color: blue; */
-        font-size:14px;
+        font-size: 14px;
         color: rgba(83, 80, 80, 0.705);
-        position:relative;
+        position: relative;
         left: 360px;
         display: flex;
+        top: 4px;
     }
-    .gap .top3 .innertop3{
+
+    .gap .top3 .innertop3 {
         margin-left: 8px;
+        top: 4px;
     }
-    .gap .top4{
+
+    .gap .top4 {
         /* background-color: red; */
         font-size: 14px;
         color: rgba(83, 80, 80, 0.705);
-        position:relative;
+        position: relative;
         left: 360px;
+        top: 4px;
     }
-    #line1{
+
+    #line1 {
         width: 1550px;
         height: 1px;
         background-color: #d8d6d7;
         position: relative;
-        top:-1px;
+        top: -1px;
     }
-    .inner{
+
+    .inner {
         display: flex;
         /* background-color: aqua; */
         height: 32px;
         width: 1550px;
     }
-    .item-1{
+
+    .item-1 {
         width: 280px;
         background-color: #d8d6d7;
         margin-right: 1px;
         text-align: right;
         font-size: 15px;
     }
+
     .item-1 span {
         display: inline-block;
         /* background-color: palegreen; */
@@ -100,99 +129,114 @@
         opacity: .8;
         cursor: pointer;
     }
-    .item-2{
+
+    .item-2 {
         width: 120px;
         background-color: #d8d6d7;
         margin-right: 1px;
         text-align: center;
         font-size: 15px;
     }
-    .item-2 span{
-        /* background-color: antiquewhite; */
-        position: relative;
-        top:7px;
-        cursor: pointer;
-        opacity: .8;
-    }
-    .item-3{
-        width: 120px;
-        background-color: #d8d6d7;
-        margin-right: 1px;
-        text-align: center;
-        font-size: 15px;
-    }
-    .item-3 span{
+
+    .item-2 span {
         /* background-color: antiquewhite; */
         position: relative;
         top: 7px;
         cursor: pointer;
         opacity: .8;
     }
-    .item-4{
+
+    .item-3 {
+        width: 120px;
+        background-color: #d8d6d7;
+        margin-right: 1px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .item-3 span {
+        /* background-color: antiquewhite; */
+        position: relative;
+        top: 7px;
+        cursor: pointer;
+        opacity: .8;
+    }
+
+    .item-4 {
         width: 130px;
         background-color: #d8d6d7;
         margin-right: 1px;
         text-align: center;
         font-size: 15px;
     }
-    .item-4 span{
+
+    .item-4 span {
         position: relative;
-        top:7px;
+        top: 7px;
         cursor: pointer;
         opacity: .8;
     }
-    .item-5{
+
+    .item-5 {
         width: 130px;
         background-color: #d8d6d7;
         margin-right: 1px;
         text-align: center;
         font-size: 15px;
     }
-    .item-5 span{
+
+    .item-5 span {
         position: relative;
-        top:7px;
+        top: 7px;
         cursor: pointer;
         opacity: .8;
     }
-    .item-6{
+
+    .item-6 {
         width: 140px;
         background-color: #d8d6d7;
         margin-right: 1px;
         text-align: center;
         font-size: 15px;
     }
-    .item-6 span{
+
+    .item-6 span {
         position: relative;
-        top:7px;
+        top: 7px;
         cursor: pointer;
         opacity: .8;
     }
-    .item-7{
+
+    .item-7 {
         width: 240px;
         background-color: #d8d6d7;
         margin-right: 1px;
         text-align: center;
         font-size: 15px;
     }
-    .item-7 span{
+
+    .item-7 span {
         position: relative;
         top: 7px;
         cursor: pointer;
         opacity: .8;
     }
-    .item-8{
+
+    .item-8 {
         width: 500px;
         background-color: #d8d6d7;
         /* margin-right: 3px; */
     }
-    .item-8 form{
+
+    .item-8 form {
         display: inline-block;
         /* background-color: yellowgreen; */
         position: relative;
-        top:4px;
+        top: 4px;
         left: 50px;
     }
-    input[type=text]{
+
+    input[type=text] {
         border-top: 2px solid rgba(56, 51, 51, 0.548);
         border-left: 2px solid rgba(56, 51, 51, 0.548);
         border-right: none;
@@ -201,7 +245,8 @@
         padding-left: 4px;
         padding-right: 25px;
     }
-    .go{
+
+    .go {
         display: inline-block;
         background-color: white;
         position: relative;
@@ -217,14 +262,16 @@
         cursor: pointer;
         /* width: 34px; */
     }
-    #line2{
+
+    #line2 {
         width: 1550px;
         height: 1px;
         background-color: #d8d6d7;
         position: relative;
         top: 1px;
     }
-    .navbelow{
+
+    .navbelow {
         height: 65px;
         width: 1150px;
         margin: auto;
@@ -235,39 +282,47 @@
         font-size: 17px;
         color: #72777e;
     }
-    .navbelow .head-1{
+
+    .navbelow .head-1 {
         margin-right: 15px;
     }
-    .navbelow .head-2{
+
+    .navbelow .head-2 {
         margin-right: 15px;
     }
-    .navbelow .head-4{
+
+    .navbelow .head-4 {
         position: relative;
         left: 320px;
     }
-    .navbelow .head-4 img{
+
+    .navbelow .head-4 img {
         display: inline-block;
         position: relative;
-        height: 60px;
+        height: 56px;
         width: 100px;
         /* background-color: aqua; */
-        top: 7px;
+        top: 5px;
+        z-index: -1;
     }
-    .navbelow .head-4 div{
+
+    .navbelow .head-4 div {
         display: inline-block;
         position: relative;
-        top:-20px;
+        top: -20px;
         font-size: 17px;
         color: #72777e;
         /* background-color: gray; */
     }
-    #navline{
+
+    #navline {
         width: 1550px;
         height: 1px;
-        background-color:#72777e9c;
+        background-color: #72777e9c;
         opacity: .6;
     }
-    .middle{
+
+    .middle {
         width: 1150px;
         height: 900px;
         margin: auto;
@@ -276,7 +331,8 @@
         display: flex;
         flex-direction: column;
     }
-    .box1{
+
+    .box1 {
         height: 480px;
         width: 1150px;
         background-color: white;
@@ -284,29 +340,33 @@
         justify-content: space-between;
         z-index: -1;
     }
-    .box1 .img{
+
+    .box1 .img {
         /* border: 2px solid black; */
         display: inline-block;
         /* background-color:white; */
         width: 760px;
         height: 40px;
     }
-    .img img{
+
+    .img img {
         display: inline-block;
         position: relative;
         left: 8px;
         width: 744px;
         height: 472px;
     }
-    .sidebar{
+
+    .sidebar {
         width: 380px;
         height: 472px;
-        background: linear-gradient(to bottom,#000000c2, #000000c2);
+        background: linear-gradient(to bottom, #000000c2, #000000c2);
         /* z-index: -1; */
         position: relative;
         left: -10px;
     }
-    .innerside{
+
+    .innerside {
         position: relative;
         top: 10px;
         left: 10px;
@@ -316,10 +376,12 @@
         border: 1px solid #707070;
         opacity: .8;
     }
-    .blank1{
-        height: 40px; 
+
+    .blank1 {
+        height: 40px;
     }
-    .heading h3{
+
+    .heading h3 {
         color: white;
         /* background-color: red; */
         width: 265px;
@@ -330,49 +392,59 @@
         opacity: .9;
         /* background-color: red; */
     }
-    .blank2{
+
+    .blank2 {
         height: 20px;
     }
-    .para{
+
+    .para {
         margin: auto;
         width: 265px;
         color: rgba(255, 255, 255, 0.568);
     }
-    .para #gap{
+
+    .para #gap {
         height: 7px;
     }
-    .blank3{
+
+    .blank3 {
         height: 35px;
     }
-    .common{
+
+    .common {
         width: 265px;
         margin: auto;
         color: white;
         opacity: .9;
     }
-    .line{
+
+    .line {
         width: 265px;
         height: 1px;
         background-color: #545351;
         margin: auto;
-        margin-top:5px;
+        margin-top: 5px;
         margin-bottom: 5px;
     }
-    .blank4{
+
+    .blank4 {
         height: 22px;
     }
-    #anchor{
+
+    #anchor {
         width: 265px;
         margin: auto;
         color: white;
         /* background-color: red; */
         cursor: pointer;
     }
-    #anchor a{
-        color:rgba(255, 255, 255, 0.562);
+
+    #anchor a {
+        color: rgba(255, 255, 255, 0.562);
         cursor: pointer;
     }
-    .white{
+
+    .white {
         height: 10px;
         width: 390px;
         /* background-color: white; */
@@ -380,37 +452,43 @@
         top: 20px;
         z-index: -2;
     }
-    .box2{
+
+    .box2 {
         height: 250px;
         width: 1150px;
         background-color: white;
         z-index: -2;
     }
-    .box2 .innerbox2{
+
+    .box2 .innerbox2 {
         height: 250px;
         border: 10px solid black;
         display: flex;
-        color:grey;
+        color: grey;
         /* justify-content: space-between; */
     }
-    .innerbox2 .block-1{
-       background-image: url(promo_glass.png);
-       width: 450px;
-       background-size: cover;
-       background-repeat: no-repeat;
-       filter: brightness(100%);
-       /* z-index: -1; */
+
+    .innerbox2 .block-1 {
+        background-image: url(promo_glass.png);
+        width: 450px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(100%);
+        /* z-index: -1; */
     }
-    .block-1 .space-1{
+
+    .block-1 .space-1 {
         height: 22px;
     }
-    .block-1 #up{
+
+    .block-1 #up {
         font-size: 20px;
         font-weight: 200;
         margin-left: 30px;
         color: rgba(0, 0, 0, 0.747);
     }
-    .block-1 #last{
+
+    .block-1 #last {
         font-weight: 400;
         position: relative;
         left: 240px;
@@ -418,14 +496,17 @@
         cursor: pointer;
         color: rgba(0, 0, 0, 0.815);
     }
-    .block-1 .space-2{
+
+    .block-1 .space-2 {
         height: 5px;
     }
-    .block-1 #down{
+
+    .block-1 #down {
         font-size: 15px;
-        margin-left:30px;
+        margin-left: 30px;
     }
-    .sline{
+
+    .sline {
         height: 215px;
         width: 1px;
         background-color: rgba(0, 0, 0, 0.418);
@@ -433,30 +514,36 @@
         top: 10px;
         opacity: .3;
     }
-    .block-2{
-       /* background-image: url(promo_plates.png); */
-       width: 430px;
-       /* display: inline-block; */
+
+    .block-2 {
+        /* background-image: url(promo_plates.png); */
+        width: 430px;
+        /* display: inline-block; */
     }
-    .block-2 img{
+
+    .block-2 img {
         width: 100%;
         height: 82%;
         /* border: 2px solid red; */
         display: inline-block;
         position: relative;
-        top:-40px;
-        z-index: -1;;
+        top: -40px;
+        z-index: -1;
+        ;
     }
-    .block-2 .space-1{
+
+    .block-2 .space-1 {
         height: 22px;
     }
-    .block-2 #up{
+
+    .block-2 #up {
         font-size: 20px;
         font-weight: 200;
         margin-left: 30px;
         color: rgba(0, 0, 0, 0.747);
     }
-    .block-2 #last{
+
+    .block-2 #last {
         font-weight: 400;
         position: relative;
         left: 220px;
@@ -464,31 +551,37 @@
         cursor: pointer;
         color: rgba(0, 0, 0, 0.815);
     }
-    .block-2 .space-2{
+
+    .block-2 .space-2 {
         height: 5px;
     }
-    .block-2 #down{
+
+    .block-2 #down {
         font-size: 15px;
-        margin-left:30px;
+        margin-left: 30px;
     }
-    .block-3{
+
+    .block-3 {
         /* background-image: url(promo_album.png); */
-       width: 450px;
-       display: flex;
+        width: 450px;
+        display: flex;
     }
-    .block-3 .content{
+
+    .block-3 .content {
         width: 330px;
         /* border: 2px solid green; */
         position: relative;
         top: 8px;
     }
-    .block-3 header{
+
+    .block-3 header {
         font-size: 22px;
         color: #545351;
         margin-left: 20px;
         margin-bottom: 3px;
     }
-    .block-3 img{
+
+    .block-3 img {
         display: block;
         width: 130%;
         height: 96%;
@@ -498,60 +591,72 @@
         left: -53px;
         filter: brightness(98%);
     }
-    .block-3 .blank-1{
+
+    .block-3 .blank-1 {
         /* border: 1px solid green; */
         height: 18px;
         width: 20px;
     }
-    .block-3 .blank-2{
-        height:7px;
+
+    .block-3 .blank-2 {
+        height: 7px;
     }
-    .block-3 p{
-        margin-left:20px;
+
+    .block-3 p {
+        margin-left: 20px;
         margin-bottom: 4px;
     }
-    .block-3 .blank-3{
+
+    .block-3 .blank-3 {
         height: 12px;
     }
-    .block-3 footer{
+
+    .block-3 footer {
         font-size: large;
         margin-left: 20px;
     }
-    .footer-1{
+
+    .footer-1 {
         display: flex;
         margin-top: 10px;
         /* background-color: red; */
     }
-    .footer-1 a{
-        color:rgba(180, 180, 180, 0.664);
+
+    .footer-1 a {
+        color: rgba(180, 180, 180, 0.664);
     }
-    .footer-1 p{
+
+    .footer-1 p {
         position: relative;
         left: 413px;
         color: rgba(180, 180, 180, 0.664);
     }
-    .footer-1 div{
+
+    .footer-1 div {
         height: 13px;
         width: 1px;
         background-color: rgba(180, 180, 180, 0.664);
         margin-left: 10px;
         margin-right: 10px;
         position: relative;
-        top:5px;
+        top: 5px;
     }
-    .footer-2{
+
+    .footer-2 {
         /* background-color: green; */
         margin-top: 12px;
         margin-bottom: 7px;
         display: flex;
-        color:rgba(180, 180, 180, 0.664);
+        color: rgba(180, 180, 180, 0.664);
     }
-    .footer-2 a{
-        color:rgba(180, 180, 180, 0.664);
+
+    .footer-2 a {
+        color: rgba(180, 180, 180, 0.664);
         display: inline-block;
         margin-left: 6px;
     }
-    .footer-2 form input{
+
+    .footer-2 form input {
         display: inline-block;
         position: relative;
         left: 200px;
@@ -559,19 +664,22 @@
         color: black;
         border: none;
     }
-    .footer-2 button{
+
+    .footer-2 button {
         position: relative;
         left: 210px;
-        top:-2px;
+        top: -2px;
         cursor: pointer;
-        padding:2px 6px;
+        padding: 2px 6px;
         border-radius: 8px;
     }
-    .footer-3{
+
+    .footer-3 {
         /* background-color: blue; */
-        color:rgba(180, 180, 180, 0.664);
+        color: rgba(180, 180, 180, 0.664);
     }
 </style>
+<div class="top">
     <div class="gap">
         <div class="log">
             <img src="logo.png" alt="">
@@ -608,110 +716,112 @@
         </div>
         <div id="line2"></div>
     </div>
+</div>
+<div class="navbelow">
+    <div class="head-1">Free Shipping on Orders Over $150</div>
+    <div class="head-2">○&nbsp Holdiay Platters</div>
+    <div class="head-3">○&nbsp Celebrate Thanksgiving</div>
+    <div class="head-4">
+        <img src="bridelRegistry.jpg" alt="">
+        <div>Bridal Registry</div>
+    </div>
+</div>
+<div id="navline">
+</div>
+<div class="middle">
+    <div class="box1">
+        <div class="img">
+            <img src="Recipe.jpg" alt="">
+        </div>
+        <div class="sidebar">
+            <div class="innerside">
+                <div class="blank1"></div>
+                <div class="heading">
+                    <h3>Dress your table</h3>
+                </div>
+                <div class="blank2"></div>
+                <div class="para">
+                    <p>Create a fabulous new look for your next</p>
+                    <p id="gap"></p>
+                    <p> event.Choose from various styles and </p>
+                    <p id="gap"></p>
+                    <p>ideas</p>
+                </div>
+                <div class="blank3"></div>
+                <div class="common">Contemporary</div>
+                <div class="line"></div>
+                <div class="common">Traditional</div>
+                <div class="line"></div>
+                <div class="common">Brunch</div>
+                <div class="line"></div>
+                <div class="common">Themes</div>
+                <div class="line"></div>
+                <div class="common">Buffet</div>
+                <div class="line"></div>
+                <div class="common">Wine & Cheese</div>
+                <div class="blank4"></div>
+                <div id="anchor"><a href="">See More Dress Your Table Ideas</a></div>
+            </div>
+            <!-- <div class="white"></div> -->
+        </div>
+    </div>
+    <div class="box2">
+        <div class="innerbox2">
+            <div class="block-1">
+                <div class="space-1"></div>
+                <p id="up">You'll love our fine stemware collection</p>
+                <div class="space-2"></div>
+                <p id="down">Duis autem vel eum iriure dolor in hendrerit vulputate.</p>
+                <p id="last">See all stemware</p>
+            </div>
+            <div class="sline"></div>
+            <div class="block-2">
+                <div class="space-1"></div>
+                <p id="up">Home accent for the holidays</p>
+                <div class="space-2"></div>
+                <p id="down">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p id="last">See all home accents</p>
+                <img src="promo_plates.png" alt="">
+            </div>
+            <div class="sline"></div>
+            <div class="block-3">
+                <div class="content">
+                    <div class="blank-1"></div>
+                    <header>Mikasa clearance</header>
+                    <header>Sale 20% to 80% off</header>
+                    <div class="blank-2">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>consectetur, adipisic</p>
+                    <div class="blank-3"></div>
+                    <footer>See all clearance items</footer>
+                </div>
+                <div class="img">
+                    <img src="promo_album.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-1">
+        <a href="">About Mikasa</a>
+        <div></div>
+        <a href="">Customer Service</a>
+        <div></div>
+        <a href="">Privacy Policy</a>
+        <p>Sign up to receive special offers & promotions from Mikasa.</p>
+    </div>
+    <div class="footer-2">For assistance, call us at 1.866.645.2721 (Mon - Fri 8:30am -6:00pm est) or <a href="">Email
+            Us</a>
+        <form>
+            <input type="text" placeholder="Enter your email address">
+        </form>
+        <button>SIGN UP</button>
+    </div>
+    <div class="footer-3">
+        © Copyright 2008 Mikasa & Company
+    </div>
+</div>
 
-    <div class="navbelow">
-        <div class="head-1">Free Shipping on Orders Over $150</div>
-        <div class="head-2">○&nbsp Holdiay Platters</div>
-        <div class="head-3">○&nbsp Celebrate Thanksgiving</div>
-        <div class="head-4">
-            <img src="bridelRegistry.jpg" alt="">
-            <div>Bridal Registry</div>
-        </div>
-    </div>
-    <div id="navline">
-    </div>
-    <div class="middle">
-        <div class="box1">
-            <div class="img">
-                <img src="Recipe.jpg" alt="">
-            </div>
-            <div class="sidebar">
-                <div class="innerside">
-                    <div class="blank1"></div>
-                    <div class="heading">
-                        <h3>Dress your table</h3>
-                    </div>
-                    <div class="blank2"></div>
-                    <div class="para">
-                        <p>Create a fabulous new look for your next</p> 
-                        <p id="gap"></p>
-                        <p> event.Choose from various styles and </p>
-                        <p id="gap"></p>
-                        <p>ideas</p>
-                    </div>
-                    <div class="blank3"></div>
-                    <div class="common">Contemporary</div>
-                    <div class="line"></div>
-                    <div class="common">Traditional</div>
-                    <div class="line"></div>
-                    <div class="common">Brunch</div>
-                    <div class="line"></div>
-                    <div class="common">Themes</div>
-                    <div class="line"></div>
-                    <div class="common">Buffet</div>
-                    <div class="line"></div>
-                    <div class="common">Wine & Cheese</div>
-                    <div class="blank4"></div>
-                    <div id="anchor"><a href="">See More Dress Your Table Ideas</a></div>
-                </div>
-                <!-- <div class="white"></div> -->
-            </div>
-        </div>
-        <div class="box2">
-            <div class="innerbox2">
-                <div class="block-1">
-                    <div class="space-1"></div>
-                    <p id="up">You'll love our fine stemware collection</p>
-                    <div class="space-2"></div>
-                    <p id="down">Duis autem vel eum iriure dolor in hendrerit vulputate.</p>
-                    <p id="last">See all stemware</p>
-                </div>
-                <div class="sline"></div>
-                <div class="block-2">
-                    <div class="space-1"></div>
-                    <p id="up">Home accent for the holidays</p>
-                    <div class="space-2"></div>
-                    <p id="down">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                    <p id="last">See all home accents</p>
-                    <img src="promo_plates.png" alt="">
-                </div>
-                <div class="sline"></div>
-                <div class="block-3">
-                    <div class="content">
-                        <div class="blank-1"></div>
-                        <header>Mikasa clearance</header>
-                        <header>Sale 20% to 80% off</header>
-                        <div class="blank-2">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>consectetur, adipisic</p>
-                        <div class="blank-3"></div>
-                        <footer>See all clearance items</footer>
-                    </div>
-                    <div class="img">
-                        <img src="promo_album.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-1">
-            <a href="">About Mikasa</a>
-            <div></div>
-            <a href="">Customer Service</a>
-            <div></div>
-            <a href="">Privacy Policy</a>
-            <p>Sign up to receive special offers & promotions from Mikasa.</p>
-        </div>
-        <div class="footer-2">For assistance, call us at 1.866.645.2721 (Mon - Fri 8:30am -6:00pm est) or <a href="">Email Us</a>
-            <form>
-                <input type="text" placeholder="Enter your email address">
-            </form>
-            <button>SIGN UP</button>
-        </div>
-        <div class="footer-3">
-            © Copyright 2008 Mikasa & Company
-        </div>
-    </div>
 <body>
 
 </body>
