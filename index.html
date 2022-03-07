@@ -19,13 +19,15 @@
         background-attachment: fixed;
         background-size: 100% 100%;
     }
-    .top{
+
+    .top {
         /* border: 2px solid red; */
         position: sticky;
         top: 0px;
         background-color: white;
         z-index: 1;
     }
+
     .gap {
         /* background-color: rgb(211, 185, 185); */
         height: 60px;
@@ -33,7 +35,7 @@
         margin: auto;
         display: flex;
         align-items: center;
-       
+
     }
 
     .gap .log img {
@@ -97,7 +99,7 @@
     }
 
     #line1 {
-        width: 1550px;
+        /* width: 1550px; */
         height: 1px;
         background-color: #d8d6d7;
         position: relative;
@@ -108,14 +110,23 @@
         display: flex;
         /* background-color: aqua; */
         height: 32px;
-        width: 1550px;
+        /* width: 1550px; */
+        background-color: #d8d6d7;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inneri {
+        width: 1150px;
+        background-color:white;
+        display: flex;
     }
 
     .item-1 {
-        width: 280px;
+        width: 100px;
         background-color: #d8d6d7;
         margin-right: 1px;
-        text-align: right;
+        text-align: center;
         font-size: 15px;
     }
 
@@ -124,7 +135,7 @@
         /* background-color: palegreen; */
         position: relative;
         top: 7px;
-        right: 24px;
+        /* right: 0px; */
         /* font-size: 18px; */
         opacity: .8;
         cursor: pointer;
@@ -208,7 +219,7 @@
     }
 
     .item-7 {
-        width: 240px;
+        width: 280px;
         background-color: #d8d6d7;
         margin-right: 1px;
         text-align: center;
@@ -223,7 +234,7 @@
     }
 
     .item-8 {
-        width: 500px;
+        width:365px;
         background-color: #d8d6d7;
         /* margin-right: 3px; */
     }
@@ -244,6 +255,8 @@
         padding: 1px;
         padding-left: 4px;
         padding-right: 25px;
+        position: relative;
+        top: 1px;
     }
 
     .go {
@@ -264,7 +277,7 @@
     }
 
     #line2 {
-        width: 1550px;
+        /* width: 1550px; */
         height: 1px;
         background-color: #d8d6d7;
         position: relative;
@@ -698,19 +711,21 @@
     <div class="nav">
         <div id="line1"></div>
         <div class="inner">
-            <div class="item-1"><span>Dining</span></div>
-            <div class="item-2"><span>Crystal</span></div>
-            <div class="item-3"><span>By Brand</span></div>
-            <div class="item-4"><span>What's New</span></div>
-            <div class="item-5"><span>Find a Gift</span></div>
-            <div class="item-6"><span>Wedding Ideas</span></div>
-            <div class="item-7"><span>Clearance & Special Offers</span></div>
-            <div class="item-8">
-                <form>
-                    <input type="text" id="fname" placeholder="Search Keyword/Item #">
-                </form>
-                <div class="go">
-                    Go
+            <div class="inneri">
+                <div class="item-1"><span>Dining</span></div>
+                <div class="item-2"><span>Crystal</span></div>
+                <div class="item-3"><span>By Brand</span></div>
+                <div class="item-4"><span>What's New</span></div>
+                <div class="item-5"><span>Find a Gift</span></div>
+                <div class="item-6"><span>Wedding Ideas</span></div>
+                <div class="item-7"><span>Clearance & Special Offers</span></div>
+                <div class="item-8">
+                    <form>
+                        <input type="text" id="fname" placeholder="Search Keyword/Item #">
+                    </form>
+                    <div class="go">
+                        Go
+                    </div>
                 </div>
             </div>
         </div>
