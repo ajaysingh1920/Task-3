@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
 </head>
 <style>
     * {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
     }
 
     body {
@@ -254,7 +259,7 @@
         border-bottom: none;
         padding: 1px;
         padding-left: 4px;
-        padding-right: 25px;
+        padding-right: 45px;
         padding-top: 2px;
         position: relative;
         top: 1px;
@@ -338,47 +343,48 @@
 
     .middle {
         width: 1150px;
-        height: 900px;
+        height: 710px;
         margin: auto;
         /* background-color: red; */
-        margin-top: 8px;
+        /* margin-top: 8px; */
         display: flex;
         flex-direction: column;
     }
 
     .box1 {
-        height: 480px;
+        height: 510px;
         width: 1150px;
         background-color: white;
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         z-index: -1;
+        padding: 9px;
     }
 
     .box1 .img {
         /* border: 2px solid black; */
         display: inline-block;
         /* background-color:white; */
-        width: 760px;
-        height: 40px;
+        height: 492px;
+        width: 774px;
     }
 
     .img img {
         display: inline-block;
         position: relative;
-        left: 8px;
+        /* left: 8px; */
         width: 774px;
-        height: 472px;
+        height: 492px;
         filter: brightness(120%);
     }
 
     .sidebar {
-        width: 350px;
-        height: 472px;
-        background: linear-gradient(to bottom, #000000c2, #000000c2);
+        width: 349px;
+        height: 492px;
+        background: linear-gradient(to bottom, #000000cb, #000000d3);
         /* z-index: -1; */
         position: relative;
-        left: -10px;
+        left: 9px;
     }
 
     .innerside {
@@ -386,7 +392,7 @@
         top: 10px;
         left: 10px;
         width: 330px;
-        height: 452px;
+        height: 472px;
         /* background-color: green; */
         border: 1px solid #707070;
         opacity: .8;
@@ -469,15 +475,15 @@
     }
 
     .box2 {
-        height: 250px;
+        height: 200px;
         width: 1150px;
         background-color: white;
         z-index: -2;
     }
 
     .box2 .innerbox2 {
-        height: 250px;
-        border: 9px solid rgba(0, 0, 0, 0.877);
+        height: 200px;
+        border: 8px solid rgba(0, 0, 0, 0.877);
         display: flex;
         color: grey;
         /* justify-content: space-between; */
@@ -485,10 +491,11 @@
 
     .innerbox2 .block-1 {
         background-image: url(promo_glass.png);
-        width: 450px;
-        background-size: cover;
+        background-size: contain;
+        /* background-size: cover; */
         background-repeat: no-repeat;
-        filter: brightness(100%);
+        /* filter: brightness(100%); */
+        width: 430px;
         /* z-index: -1; */
     }
 
@@ -498,9 +505,10 @@
 
     .block-1 #up {
         font-size: 20px;
-        font-weight: 200;
+        font-weight: 400;
         margin-left: 30px;
-        color: rgba(0, 0, 0, 0.747);
+        color: rgba(0, 0, 0, 0.993);
+        opacity: .8;
     }
 
     .block-1 #last {
@@ -522,12 +530,12 @@
     }
 
     .sline {
-        height: 215px;
+        height: 165px;
         width: 1px;
         background-color: rgba(0, 0, 0, 0.418);
         position: relative;
         top: 10px;
-        opacity: .3;
+        opacity: .5;
     }
 
     .block-2 {
@@ -538,7 +546,7 @@
 
     .block-2 img {
         width: 100%;
-        height: 82%;
+        height: 72%;
         /* border: 2px solid red; */
         display: inline-block;
         position: relative;
@@ -553,9 +561,10 @@
 
     .block-2 #up {
         font-size: 20px;
-        font-weight: 200;
+        font-weight: 400;
         margin-left: 30px;
-        color: rgba(0, 0, 0, 0.747);
+        color: rgb(0, 0, 0);
+        opacity: .8;
     }
 
     .block-2 #last {
@@ -586,12 +595,13 @@
         width: 330px;
         /* border: 2px solid green; */
         position: relative;
-        top: 8px;
+        top: -2px;
     }
 
     .block-3 header {
-        font-size: 22px;
-        color: #545351;
+        font-size: 21px;
+        color: black;
+        opacity: .8;
         margin-left: 20px;
         margin-bottom: 3px;
     }
@@ -599,22 +609,22 @@
     .block-3 img {
         display: block;
         width: 130%;
-        height: 96%;
+        height: 92%;
         /* border: 3px solid red; */
         position: relative;
-        top: 9px;
-        left: -53px;
+        top: 13px;
+        left: -48px;
         filter: brightness(98%);
     }
 
     .block-3 .blank-1 {
         /* border: 1px solid green; */
-        height: 18px;
+        height: 16px;
         width: 20px;
     }
 
     .block-3 .blank-2 {
-        height: 7px;
+        height: 5px;
     }
 
     .block-3 p {
@@ -623,12 +633,13 @@
     }
 
     .block-3 .blank-3 {
-        height: 12px;
+        height: 5px;
     }
 
     .block-3 footer {
         font-size: large;
         margin-left: 20px;
+        font-weight: 500;
     }
 
     .footer-1 {
@@ -758,11 +769,11 @@
                 </div>
                 <div class="blank2"></div>
                 <div class="para">
-                    <p>Create a fabulous new look for your next</p>
+                    <p>Create a fabulous new look for your</p>
                     <p id="gap"></p>
-                    <p> event.Choose from various styles and </p>
+                    <p>next event.Choose from various styles</p>
                     <p id="gap"></p>
-                    <p>ideas</p>
+                    <p>and ideas.</p>
                 </div>
                 <div class="blank3"></div>
                 <div class="common">Contemporary</div>
@@ -817,7 +828,7 @@
                     <img src="promo_album.png" alt="">
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
     <div class="footer-1">
         <a href="">About Mikasa</a>
