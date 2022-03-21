@@ -8,7 +8,9 @@
     <title>Task-3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
 </head>
 <style>
     * {
@@ -26,11 +28,27 @@
     }
 
     .top {
-        /* border: 2px solid red; */
         position: sticky;
         top: 0px;
         background-color: white;
         z-index: 1;
+        width: fit-content;
+    }
+
+    .outside {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+
+    @media screen and (max-width: 1150px) {
+        .outside {
+            margin: auto;
+            width: 1150px;
+        }
     }
 
     .gap {
@@ -40,24 +58,25 @@
         margin: auto;
         display: flex;
         align-items: center;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+        background-color: white;
 
     }
 
     .gap .log img {
         display: inline-block;
         width: 170px;
+        position: relative;
+        left: -10px;
     }
 
-    .gap .lin {
-        margin-left: 18px;
-        margin-right: 18px;
-        height: 15px;
-        width: 1px;
-        background-color: rgba(128, 128, 128, 0.568);
-        position: relative;
-        left: 335px;
-        opacity: .7;
-        top: 4px;
+    @media screen and (max-width: 1150px) {
+        .gap .log img {
+            position: relative;
+            left: 2px;
+        }
     }
 
     .gap .top1 {
@@ -67,16 +86,21 @@
         color: rgba(83, 80, 80, 0.705);
         left: 335px;
         top: 4px;
+        padding-right: 18px;
+        border-right: 1px solid #d9d7d8;
     }
 
     .gap .top2 {
         /* background-color: green; */
+        padding-left: 18px;
         font-size: 14px;
         /* color: grey; */
         position: relative;
         left: 335px;
         color: rgba(83, 80, 80, 0.705);
         top: 4px;
+        padding-right: 18px;
+        border-right: 1px solid #d9d7d8;
     }
 
     .gap .top3 {
@@ -87,6 +111,9 @@
         left: 335px;
         display: flex;
         top: 4px;
+        padding-left: 18px;
+        padding-right: 18px;
+        border-right: 1px solid #d9d7d8;
     }
 
     .gap .top3 .innertop3 {
@@ -99,36 +126,63 @@
         font-size: 14px;
         color: rgba(83, 80, 80, 0.705);
         position: relative;
-        left: 335px;
+        left: 353px;
         top: 4px;
     }
 
-    #line1 {
-        /* width: 1550px; */
-        height: 1px;
-        background-color: #d9d7d8;
-        position: relative;
-        top: -1px;
+    .navbar {
+        width: 1150px;
+        height: 37px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border: 1px solid #d9d7d8;
+        opacity: .8;
+        /* position:sticky; */
+        /* top: 60px; */
     }
 
-    .inner {
-        display: flex;
-        /* background-color: aqua; */
-        height: 32px;
-        /* width: 1550px; */
+    .nav {
+        width: 100vw;
+        position: sticky;
+        top: 60px;
         background-color: #d9d7d8;
         display: flex;
         justify-content: center;
+        margin-right: 0px;
+        z-index: 1;
+        /* border-style: outset;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red; */
+    }
+
+    @media screen and (max-width: 1150px) {
+        .nav {
+            /* color: red; */
+            width: 1150px;
+            margin: auto;
+            z-index: 1;
+        }
+    }
+
+    .inner {
+        height: 32px;
+        width: 1150px;
+        background-color: white;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        /* margin: auto; */
     }
 
     .inneri {
-        width: 1150px;
-        background-color:white;
         display: flex;
+        width: 1150px;
+        z-index: 1;
     }
 
     .item-1 {
-        width: 80px;
+        width: 90px;
         background-color: #d9d7d8;
         margin-right: 1px;
         /* text-align: center; */
@@ -140,10 +194,18 @@
         /* background-color: palegreen; */
         position: relative;
         top: 7px;
-        left: 6px;
+        left: -2px;
         /* font-size: 18px; */
         opacity: .8;
         cursor: pointer;
+    }
+
+    @media screen and (max-width:1150px) {
+        .item-1 span {
+            /* background-color: palegreen; */
+            position: relative;
+            left: 10px;
+        }
     }
 
     .item-2 {
@@ -239,7 +301,7 @@
     }
 
     .item-8 {
-        width:395px;
+        width: 395px;
         background-color: #d9d7d8;
         /* margin-right: 3px; */
     }
@@ -249,7 +311,7 @@
         /* background-color: yellowgreen; */
         position: relative;
         top: 3px;
-        left: 60px;
+        left: 58px;
         align-items: center;
     }
 
@@ -266,14 +328,14 @@
         position: relative;
         font-size: 13px;
         opacity: .8;
-        top: 1px;
+        top: 2.3px;
     }
 
     .go {
         display: inline-block;
         background-color: white;
         position: relative;
-        left: 85px;
+        left: 68px;
         top: 4px;
         padding: 1px 4px;
         border: 2px solid rgba(49, 44, 44, 0.425);
@@ -306,6 +368,14 @@
         color: #42486ec9;
     }
 
+    @media screen and (max-width:1150px) {
+        .navbelow {
+            width: 1120px;
+            position: relative;
+            left: 10px;
+        }
+    }
+
     .navbelow .head-1 {
         margin-right: 15px;
     }
@@ -316,7 +386,7 @@
 
     .navbelow .head-4 {
         position: relative;
-        left: 280px;
+        left: 300px;
     }
 
     .navbelow .head-4 img {
@@ -332,7 +402,7 @@
 
     .navbelow .head-4 div {
         display: inline-block;
-        
+
         font-size: 17px;
         color: #42486ec9;
         position: relative;
@@ -447,7 +517,8 @@
     }
 
     .line {
-        width: 265px;
+        /* display: inline-block; */
+        width: 290px;
         height: 1px;
         background-color: #545351;
         margin: auto;
@@ -557,6 +628,7 @@
         /* display: inline-block; */
         /* background-size: ; */
     }
+
     .block-2 img {
         width: 100%;
         height: 72%;
@@ -605,7 +677,7 @@
         background-repeat: no-repeat;
         background-position: right;
         background-position-y: bottom;
-        background-size:58%;
+        background-size: 58%;
         width: 430px;
         display: flex;
     }
@@ -624,7 +696,7 @@
         margin-left: 24px;
         /* margin-bottom: 0px; */
     }
-    
+
 
     .block-3 .blank-2 {
         height: 10px;
@@ -648,8 +720,10 @@
 
     .footer-1 {
         display: flex;
-        margin-top: 10px;
+        margin-top: 8px;
         font-size: 15px;
+        position: relative;
+        left: 2px;
         /* background-color: red; */
     }
 
@@ -676,11 +750,13 @@
 
     .footer-2 {
         /* background-color: green; */
-        margin-top: 12px;
-        margin-bottom: 7px;
+        margin-top: 10px;
+        margin-bottom: 0px;
         display: flex;
         color: rgba(180, 180, 180, 0.664);
         font-size: 15px;
+        position: relative;
+        left: 2px;
     }
 
     .footer-2 a {
@@ -697,7 +773,7 @@
         padding: 2px 60px 2px 8px;
         color: black;
         border: none;
-        
+
     }
 
     .footer-2 button {
@@ -713,26 +789,77 @@
         /* background-color: blue; */
         color: rgba(180, 180, 180, 0.664);
         font-size: 15px;
+        position: relative;
+        left: 2px;
+    }
+
+    @media screen and (max-width:1150px) {
+        .footer-1 {
+            position: relative;
+            left: 10px;
+            width: 1100px;
+        }
+
+        .footer-2 {
+            position: relative;
+            left: 10px;
+            width: 1100px;
+        }
+
+        .footer-3 {
+            position: relative;
+            left: 10px;
+            width: 1100px;
+        }
+
+        .footer-1 p {
+            position: relative;
+            left: 445px;
+            color: rgba(180, 180, 180, 0.664);
+        }
+
+        .footer-2 form input {
+            display: inline-block;
+            position: relative;
+            left: 255px;
+            padding: 2px 60px 2px 8px;
+            color: black;
+            border: none;
+
+        }
+
+        .footer-2 button {
+            position: relative;
+            left: 265px;
+            top: -2px;
+            cursor: pointer;
+            padding: 2px 4px;
+            border-radius: 8px;
+        }
     }
 </style>
-<div class="top">
+<div class="outside">
     <div class="gap">
         <div class="log">
             <img src="logo.png" alt="">
         </div>
         <div class="top1">Welcome Jeffery(Sign Out)</div>
-        <div class="lin"></div>
+        <!-- <div class="lin"></div> -->
+        <span></span>
         <div class="top2">My Account</div>
-        <div class="lin"></div>
+        <span></span>
+        <!-- <div class="lin"></div> -->
         <div class="top3">
             <img src="icon_cart.png" alt="">
             <div class="innertop3">999 Items -$9999.99 Checkout</div>
         </div>
-        <div class="lin"></div>
+        <span></span>
+        <!-- <div class="lin"></div> -->
         <div class="top4">Customer Service</div>
     </div>
+</div>
+<div class="navbar">
     <div class="nav">
-        <div id="line1"></div>
         <div class="inner">
             <div class="inneri">
                 <div class="item-1"><span>Dining</span></div>
@@ -752,7 +879,6 @@
                 </div>
             </div>
         </div>
-        <div id="line2"></div>
     </div>
 </div>
 <div class="navbelow">
@@ -788,14 +914,19 @@
                 <div class="blank3"></div>
                 <div class="common">Contemporary</div>
                 <div class="line"></div>
+                <!-- <span class="line"></span> -->
                 <div class="common">Traditional</div>
                 <div class="line"></div>
+                <!-- <span class="line"></span> -->
                 <div class="common">Brunch</div>
                 <div class="line"></div>
+                <!-- <span class="line"></span> -->
                 <div class="common">Themes</div>
                 <div class="line"></div>
+                <!-- <span class="line"></span> -->
                 <div class="common">Buffet</div>
                 <div class="line"></div>
+                <!-- <span class="line"></span> -->
                 <div class="common">Wine & Cheese</div>
                 <div class="blank4"></div>
                 <div id="anchor"><a href="">See More Dress Your Table Ideas</a></div>
@@ -838,26 +969,29 @@
                     <img src="promo_album.png" alt="">
                 </div> -->
             </div>
-        </div> 
+        </div>
     </div>
-    <div class="footer-1">
-        <a href="">About Mikasa</a>
-        <div></div>
-        <a href="">Customer Service</a>
-        <div></div>
-        <a href="">Privacy Policy</a>
-        <p>Sign up to receive special offers & promotions from Mikasa.</p>
-    </div>
-    <div class="footer-2">For assistance, call us at 1.866.645.2721 (Mon - Fri 8:30am -6:00pm est) or <a href="">Email
-            Us</a>
-        <form>
-            <input type="text" placeholder="Enter your email address">
-        </form>
-        <button>SIGN UP</button>
-    </div>
-    <div class="footer-3">
-        © Copyright 2008 Mikasa & Company
-    </div>
+    <footer>
+        <div class="footer-1">
+            <a href="">About Mikasa</a>
+            <div></div>
+            <a href="">Customer Service</a>
+            <div></div>
+            <a href="">Privacy Policy</a>
+            <p>Sign up to receive special offers & promotions from Mikasa.</p>
+        </div>
+        <div class="footer-2">For assistance, call us at 1.866.645.2721 (Mon - Fri 8:30am -6:00pm est) or <a
+                href="">Email
+                Us</a>
+            <form>
+                <input type="text" placeholder="Enter your email address">
+            </form>
+            <button>SIGN UP</button>
+        </div>
+        <div class="footer-3">
+            © Copyright 2008 Mikasa & Company
+        </div>
+    </footer>
 </div>
 
 <body>
